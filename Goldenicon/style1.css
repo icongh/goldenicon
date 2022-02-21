@@ -1,0 +1,354 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6e3e3;
+}
+*{
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.clr{
+    clear: both;
+}
+ a {
+     text-decoration:none;
+ }
+.navbar .current a{
+    color:#e8491a;
+}
+.myHeader{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    width: 100%;
+    min-height:50px;
+    background-color: #d83c0d;
+    z-index: 1000;
+}
+.myHeader.active{
+    top: 100px;
+}
+#main-header h1{
+    background:url('cape2.jpg');
+    background-position: center;
+    text-transform: uppercase;
+    color:#fff;
+    padding: 20px 100px;
+    /* border-bottom: #03a9fa 3px solid; */
+}
+.toggle{
+    position: absolute;
+    top: 30px;
+    right:20px;
+    width: 60px;
+    height: 60px;
+    background: url('menu.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.toggle.active{
+    background: url('closeRed.jpg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.navbar{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li ul{
+    position:absolute;
+    top: 45px;
+    left:100px;
+    display: none;
+    width: inherit;
+}
+.navbar li a{
+    color:#111;
+}
+@media(min-width:800px){
+    .navbar li ul{
+        position:absolute;
+        top:65px;
+        left: 30%;
+        display: none;
+        width: inherit;
+    }
+}
+.navbar li a:hover{
+    color: #03a9fa;
+    font-size:120%;
+}
+.navbar li:hover ul{
+    display: inline-block;
+    z-index: 1000;
+    background: #111;
+    border-radius: 25px;
+}
+.navbar li:hover ul:hover{
+    background:url('city.jpg');
+}
+.navbar li ul li a{
+    color:#fff;
+}
+.navbar li ul li a:hover{
+    color:#ff0000;
+}
+.navbar li ul li{
+    display: block;
+    padding: 0px;
+}
+.navbar li{
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    display:inline;
+    margin:0px;
+    padding: 5px;
+    line-height: 2em;
+}
+.navbar li a:hover{
+    color:royalblue;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.navbar li a:active{
+    color:salmon;
+}
+.main-area.active{
+    margin-top35px;
+}
+.tab{
+    margin-top:140px;
+}
+.tab.active{
+    margin-top:230px;
+}
+.tab a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color:#03a9fa;
+}
+.advert{
+    width:20%;
+}
+.main-area figure, .main-area figure video, .main-area figure figcaption{
+    color:#ff0000;
+}
+.main-area video{
+    width:60%;
+}
+.main-area fieldset{
+    margin:30px;
+}
+.main-area{
+    width:60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:110%;
+    line-height:120%;
+    font-weight: 110%;
+    padding: 0px 30px;
+    background: #cccaca;
+}
+.advert-area{
+    width:20%;
+}
+.advert, .main-area, .advert-area{
+    display: inline-block;
+}
+.main-area h1{
+    color:#ff0000;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.main-area h2{
+    color:#ff0000;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.main-area p{
+    font-size:0.9em;
+} fieldset{
+    padding: 10px;
+}
+
+/* clickworker */
+.clickworker-image{
+    width: 70%;
+    margin: auto;
+}
+.clickworker-image img{
+    width: 100%;
+}
+
+/* googleadsense */
+/* .container{
+    width: 100%;
+} */
+.main-area figure img{
+    width:100%;
+    height:100%;
+}
+.main-area li{
+    list-style:none;
+    width:30%;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    float:left;
+    box-sizing: border-box;
+}
+.main-area summary{
+    background:#bbb;
+    color:#111;
+}
+@media(max-width:968px){
+    .main-area li{
+        float:none;
+        width:70%;
+    }
+}
+
+.myTime{
+    background-color: rgb(168, 29, 29);
+    color:#fff;
+    border:20px;
+    padding: 8px;
+}
+#main-footer{
+    margin-top: 50px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    min-height: 70px;
+}
+#main-footer, footer .social, footer .social h2, footer .social li, footer .social li a, footer .sidebar, footer .sidebar address, footer .sidebar u, footer .sidebar a, .social ul, .social h3, summary{
+    background-color: midnightblue;
+    color:#fff;
+}
+ footer .social, footer .sidebar{
+     width:45%;
+     float:left;
+ }
+ .social{
+     text-align: center;
+     display:block;
+ }
+ .social h2{
+     font-size: 1.5em;
+ }
+ .social ul li img{
+    background-color: midnightblue;
+ }
+ .sidebar img{
+     width: 80%;
+     height: 40vh;
+ }
+ .social li{
+     list-style:none;
+     display:inline;
+     padding: 10px;
+ }
+ .social li a{
+     text-decoration: none;
+    display:inline-block;
+    transform: scale(0.7);
+    background-color: midnightblue;
+    transition:0.3s;
+}
+.social li a:hover{
+    transform:scale(0.8) translateY(-10px);
+}
+.social h3{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+ summary{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+    padding:8px;
+    color: rgb(253, 253, 253);
+    margin-bottom: 20px;
+}
+ .sidebar address{
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+ }
+ .social{
+   height:49.1vh;
+ }
+ .sidebar{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.sidebar img{
+    margin-top:10px;
+}
+/* back */
+.top{
+    position: fixed;
+    bottom: 50px;
+    width: 4%;
+    height: 8%;
+    background:#111;
+    color:#ff0000;
+    font-size:150%;
+    z-index: 1000;
+
+}
+.bottom{
+    position: fixed;
+    bottom: 0%;
+    width: 4%;
+    height: 8%;
+    background:#111;
+    color:#ff0000;
+    font-size:150%;
+    z-index: 1000;
+
+}
+ @media(max-width:768px){
+    .advert, .main-area, .advert-area{
+        display: initial;
+    }
+    .main-area img{
+        width: 80%;
+        margin:auto;
+    }
+    .sidebar{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .sidebar img{
+        margin-top:10px;
+        width:60%;
+        height: 100px;
+    }
+    .advert{
+        width:100%;
+    }
+    .container{
+        width:85%;
+        margin:auto;
+        line-height:120%;
+    }
+     h1, h2, h3, h4, h5, h6{
+         line-height:120%;
+     }
+    .main-area video{
+        width:100%;
+    }
+ }

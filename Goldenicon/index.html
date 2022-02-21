@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make Money Online">
+    <meta name="keywords" content="Make money online, google Adsence, cryptocurrency, Affiliate marketing, rumble,youtube,mindsumo">
+    <meta name="author" content="Anag-bey Kwame">
+    <title>Make Money Online | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body id="body">
+
+    <section class="showcase">
+        <header>
+            <a href="index.html"><h1><img src="icongh.jpg" alt="logo"/> <span class="highlight"> Icon</span> Gh</h1></a>
+            <div class="toggle"></div>
+        </header>
+        <div class="myImage"><img src="cape2.jpg" alt="showcase image"/></div>
+        
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 id="myH2">Start Making Money From Online Right Now</h2>
+            <marquee><h3>Together We Make</h3></marquee>
+             <select name="background" id="background" onchange="changeBackground(this)">
+                <option>Select Color</option>
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Pink</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>coral</option>
+            </select>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="whatsapp.com" target="_blank"><img src="whatsapp.jpg" alt="Whatsapp" title="0208104329"/></a></li>
+                <li><a href="facebook.com" target="_blank"><img src="facebook.png" alt="facebook" title="Kwame Icon"/></a></li>
+                <li><a href="telegram.com" target="_blank"><img src="telegram.png" alt="telegram" title="Icon Gh"/></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="bgImage"><img src="city.jpg" alt="Secong Bg Image"></div>
+    <nav class="navbar">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="general.html">Affiliate</a>
+                <ul>
+                    <li><a href="general.html">General</a></li>
+                    <li><a href="swagbucks.html">Swagbucks</a></li>
+                    <li><a href="coinbase.html">Coinbase</a></li>
+                    <li><a href="payoneer.html">Payoneer</a></li>
+                    <li><a href="clickworker.html">Clickworker</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="googleadsence.html">Google AdSence</a></li>
+            <li><a href="mindsumo.html">Mindsumo</a></li>
+            <li><a href="cryptocurrency.html">Cryptocurrency</a></li>
+            
+        </ul>
+    </nav>
+    <script>
+                
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active')
+        })
+        
+        function changeBackground(x){
+            console.log(x.value);
+            var myH2 =  document.getElementById('myH2');
+            myH2.style.color = x.value;
+        }
+
+    </script>
+
+</body>
+</html> -->
